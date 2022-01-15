@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <!-- Label -->
+            <TextView
+                android:id="@+id/edit_view1"
+                android:layout_width="137dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:text="Nom du joueur"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/edit_text1"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="50dp"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="299dp"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/edit_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="Niveau de difficulté "
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="166dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rd"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="50dp">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Facile"
+                    tools:ignore="MissingConstraints" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:text="Moyen"
+                    tools:ignore="MissingConstraints" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:text="Difficille"
+                    tools:ignore="MissingConstraints" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="JOUER"
+                android:textColor="#090909"
+                app:backgroundTint="#ACA9A9" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="50dp"
+                android:text="QUITTER"
+                android:textColor="#090909"
+                app:backgroundTint="#ACA9A9" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
