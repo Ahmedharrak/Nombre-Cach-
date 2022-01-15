@@ -7,3 +7,4 @@ JEU DE RECHERCHE D’UN NOMBRE CACHE
   - ### Facile : Le nombre à rechercher est généré dans l’intervalle 0 et 100 présenté à l’utilisateur.
   - ### Moyen : Le nombre à rechercher est généré dans l’intervalle 0 et 1000 présenté à l’utilisateur.
   - ### Difficile : Le nombre à rechercher est généré dans l’intervalle 0 et 10000 non présenté à l’utilisateur.
+
